@@ -68,15 +68,25 @@ def load(filename,extension):
     
 #-----descriptive statistics----
 def diagnose():
-    pass
-
+    data = load('','')
+    print(data.shape)
+    print(data.columns)
+    print(data.info())
+    print(data.head())
+ 
 def explore():
-    pass
+    data = diagnose()
+    for col in data.columns:
+        print(data[col].value_counts(dropna=False))
+        
+    return data
 #----end of descritive---------
 
 def visualize():
-    pass
-
+    data = explore()
+    cols = data.columns
+    for c in cols:
+        data[c].plot(kind='hist', rot=70, logx=True, logy=True)
 
 
 if __name__ == '__main__':main()
