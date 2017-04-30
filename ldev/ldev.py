@@ -18,7 +18,7 @@ Common data problems
     - Column types can signal unexpected data values
 """
 
-def main():
+def explore_data():
     pass
 '''
 read_csv
@@ -89,6 +89,6 @@ def visualize():
         data[c].plot(kind='hist', rot=70, logx=True, logy=True)
 
 
-if __name__ == '__main__':main()
+if __name__ == '__main__':explore_data()
 
 
