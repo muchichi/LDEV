@@ -33,5 +33,11 @@ def pivot():
 def pivottable():
     pass
 
+def split_column(separator):
+    pass
+
+def get_create_column(column,index):
+    pass
+
 
 if __name__ == '__main__': tidy()
